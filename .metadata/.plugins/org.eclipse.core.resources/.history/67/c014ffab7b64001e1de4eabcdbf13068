@@ -1,0 +1,5 @@
+package com.adonay.monsters.controllers;
+
+public class MonsterController {
+
+}

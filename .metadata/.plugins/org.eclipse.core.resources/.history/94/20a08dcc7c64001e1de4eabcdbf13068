@@ -1,0 +1,6 @@
+package com.adonay.monsters.controllers;
+
+public class Snippet {
+	@PathVariable(value="id")long id
+}
+

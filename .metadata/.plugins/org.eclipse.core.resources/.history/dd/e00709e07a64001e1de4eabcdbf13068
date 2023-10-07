@@ -1,0 +1,5 @@
+package com.adonay.monsters.entity.services;
+
+public class MonsterServiceImp {
+
+}

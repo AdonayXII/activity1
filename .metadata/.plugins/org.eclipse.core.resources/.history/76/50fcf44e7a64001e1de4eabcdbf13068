@@ -1,0 +1,5 @@
+package com.adonay.monsters.entity.dao;
+
+public interface IMonsterDao {
+
+}

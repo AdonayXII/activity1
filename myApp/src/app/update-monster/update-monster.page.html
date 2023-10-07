@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>update-monster</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">update-monster</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <ion-button (click)="gotoMyHome()">HOME</ion-button>
+    <ion-button (click)="gotoMyMonsters()">SHOW MONSTERS</ion-button>
+  </div>
+
+  <div>
+    <form [formGroup]="newMonsterForm" (ngSubmit)="updateMonsterForm()">
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-input formControlName="name" label="Name: " type="text" value={{oldMonster.name}}></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input formControlName="type" label="Type: " type="text" value={{oldMonster.type}}></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input formControlName="weakElement" label="Weak Element: " type="text" value={{oldMonster.weak_element}}></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input formControlName="elementApply" label="Element Apply: " type="text" value={{oldMonster.element_apply}}></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-button type="submit" [disabled]="newMonsterForm.invalid">UPDATE</ion-button>
+    </form>
+  </div>
+
+</ion-content>

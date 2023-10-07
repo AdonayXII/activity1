@@ -1,0 +1,10 @@
+package com.adonay.monsters.entity.models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "monsters")
+public class Monster {
+
+}

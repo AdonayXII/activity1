@@ -1,0 +1,7 @@
+package com.adonay.monsters.entity.models;
+
+@Entity
+@Table(name="monsters")
+public class Monster {
+
+}
